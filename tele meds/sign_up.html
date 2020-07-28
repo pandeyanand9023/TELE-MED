@@ -1,0 +1,72 @@
+<html>
+
+<head><!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <meta name="description" content="Login - Register Template">
+    <meta name="author" content="Lorenzo Angelino aka MrLolok">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <style>
+        body {
+            background-color: #303641;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container-login">
+        <div id="title">
+            <i class="material-icons lock">how_to_reg</i>Register
+        </div>
+  <form action="/sign_up.html" method="POST">
+      <div class="input">
+      <div class="input-addon">
+      <i class="material-icons">account_circle</i>
+      </div>
+      <input id="username" placeholder="Email" name="username" type="email" required class="validate" autocomplete="off">
+      </div>
+
+      <div class="input">
+      <div class="input-addon">
+      <i class="material-icons">face</i>
+      </div>
+      <input id="username" placeholder="Full Name" name="name" type="text" required class="validate" autocomplete="off">
+      </div>
+
+      <div class="input">
+      <div class="input-addon">
+      <i class="material-icons">perm_phone_msg</i>
+      </div>
+      <input id="username" placeholder="Phone Number" name="phone" type="text" required class="validate" autocomplete="off">
+      </div>
+
+       <div class="clearfix"></div>
+          <div class="input">
+          <div class="input-addon">
+          <i class="material-icons">vpn_key</i>
+          </div>
+          <input id="password" placeholder="Password" type="password" name="password" required class="validate" autocomplete="off">
+          </div>
+
+          <div class="styled">
+        <select name="profession">
+          <option value="">PROFESSION</option>
+          <option value=1>Patient</option>
+          <option value=2>Doctor</option>
+          <option value=3>Chemist</option>
+          <option value=4>Pathalogist</option>
+        </select>
+         </div>
+            <button type="submit" class="btn btn-danger">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>

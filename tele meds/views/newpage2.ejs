@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+<div class="centered">
+ <h1>CHEMISTS</h1>
+</div>
+<main>
+  <table>
+  <tr>
+  <th>NAME</th>
+  <th>PHONE NUMBER</th>
+  </tr>
+  <% for(let i=0;i<newListItems.length;i++){ %>
+      <div class="item">
+        <tr>
+          <th><%=newListItems[i].name%></th>
+          <th> <%=newListItems[i].phone%></th>
+        </tr>
+      </div>
+    <% } %>
+  </table>
+</main>
+<form class="abc" action="newpage" method="post">
+<table>
+<tr>
+<th><a href="newpage">Patients</a></th>
+<th><a href="newpage1">Doctors</a></th>
+<th><a href="newpage3">Pathalogists</a></th>
+<th><a href="/logout">Log Out</a></th>
+</tr>
+</table>
+
+</form>
+
+</form>
+
+<%- include('partials/footer') %>
